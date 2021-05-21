@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="N7KJZr" name="juce_sceneKit" projectType="guiapp" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1">
+  <MAINGROUP id="ubUi1O" name="juce_sceneKit">
+    <GROUP id="{87B6833D-8327-0FB5-BB1A-21A75DF196D7}" name="Source">
+      <FILE id="zaZrDQ" name="SceneView.mm" compile="1" resource="0" file="Source/SceneView.mm"/>
+      <FILE id="MzQMX3" name="SceneView.h" compile="0" resource="0" file="Source/SceneView.h"/>
+      <FILE id="Eioxe5" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="RmVIzF" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
+      <FILE id="lQsLVS" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX" customXcodeResourceFolders="Source/art.scnassets&#10;"
+               extraFrameworks="SceneKit">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="juce_sceneKit"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="juce_sceneKit"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../libs/tracktion_engine/modules/juce/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../libs/tracktion_engine/modules/juce/modules"/>
+        <MODULEPATH id="juce_events" path="../../libs/tracktion_engine/modules/juce/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../libs/tracktion_engine/modules/juce/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../libs/tracktion_engine/modules/juce/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../libs/tracktion_engine/modules/juce/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+    <XCODE_IPHONE targetFolder="Builds/iOS" customXcodeResourceFolders="Source/art.scnassets&#10;&#10;"
+                  extraFrameworks="SceneKit">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug"/>
+        <CONFIGURATION isDebug="0" name="Release"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_gui_extra"/>
+        <MODULEPATH id="juce_gui_basics"/>
+        <MODULEPATH id="juce_graphics"/>
+        <MODULEPATH id="juce_events"/>
+        <MODULEPATH id="juce_data_structures"/>
+        <MODULEPATH id="juce_core"/>
+      </MODULEPATHS>
+    </XCODE_IPHONE>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <LIVE_SETTINGS>
+    <OSX/>
+  </LIVE_SETTINGS>
+</JUCERPROJECT>
